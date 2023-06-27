@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.xkgd.courssql.query.QueryController">
+   <children>
+      <Button fx:id="selectAllBtn" disable="true" layoutX="305.0" layoutY="31.0" mnemonicParsing="false" onAction="#onSelectAllBtn" prefHeight="25.0" prefWidth="285.0" text="Select all from selected table (abort changes)" AnchorPane.leftAnchor="305.0" AnchorPane.topAnchor="30.0" />
+      <ChoiceBox fx:id="tableChoiceBox" layoutX="10.0" layoutY="31.0" onAction="#onSelectTableChoiceBox" prefHeight="25.0" prefWidth="285.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="31.0" />
+      <Label layoutX="10.0" layoutY="14.0" text="Select table : " AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="14.0" />
+      <TableView fx:id="selectTableView" layoutX="10.0" layoutY="55.0" prefHeight="452.0" prefWidth="580.0" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="65.0" />
+      <Button layoutX="10.0" layoutY="561.0" mnemonicParsing="false" onAction="#onInsertBtn" prefHeight="25.0" prefWidth="285.0" text="Insert all into selected table" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="10.0" />
+      <HBox fx:id="insertHbox" layoutX="180.0" layoutY="526.0" onInputMethodTextChanged="#onInputInPane" prefHeight="25.0" prefWidth="187.0" spacing="5" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>
